@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+header {
+    /* background: burlywood; */
+    padding: 13px 11px;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+    display: flex;
+}
+
+header .right h2 {
+    letter-spacing: 2px;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-top: 11px;
+    margin-right: 25px;
+}
+
+.left h1 span {
+    color: #4CAF50;
+}
+
+header .right button {
+    background: #50bb53;
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    padding: 10px 14px;
+    text-align: center;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+header .right button:hover {
+    opacity: 1;
+}
+
+nav {
+    background-color: #4CAF50;
+    width: 100%;
+    margin-top: 40px;
+    padding: 39px;
+    padding-top: 0;
+}
+
+.nav-left {
+    /* display: flex; */
+    float: right;
+    padding: 10px 14px;
+}
+
+.nav-left a {
+    text-decoration: none;
+    color: rgb(255, 249, 249);
+    margin-right: 20px;
+    padding: 10px 14px;
+}
+
+.nav-left a:hover {
+    opacity: 1;
+    color: black;
+    background: white;
+    /* box-shadow: 1px 3px 2px white; */
+}
+
+.nav-right {
+    float: left;
+    padding: 10px 14px;
+}
+
+.nav-right a {
+    text-decoration: none;
+    color: white;
+    margin-right: 20px;
+    padding: 10px 14px;
+    opacity: 0.8;
+}
+
+.nav-right a:hover {
+    opacity: 1;
+    color: black;
+    background: white;
+}
