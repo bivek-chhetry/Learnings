@@ -1,0 +1,135 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    background: black;
+    width: 100%;
+    height: 100vh;
+    animation: bg-anim 5s ease-in-out infinite;
+    position: relative;
+}
+
+.content {
+    position: absolute;
+    background: white;
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    left: 20%;
+    right: 20%;
+    animation: cont-anim 10s ease-in infinite;
+}
+
+@keyframes bg-anim {
+    0% {
+        background-color: black;
+    }
+    10% {
+        background: pink;
+    }
+    30% {
+        background: red;
+    }
+    60% {
+        background: yellow
+    }
+    80% {
+        background: blue;
+    }
+    100% {
+        background: green;
+    }
+}
+
+@keyframes cont-anim {
+    0% {
+        transform: translate(0px, 0px) scale(2);
+    }
+    20% {
+        transform: translate(110px, 0px) rotate( 45deg) scale(0.2);
+    }
+    30% {
+        transform: translate(110px, 50px);
+    }
+    40% {
+        transform: translate(120px, 40px) scale(1.5);
+    }
+    50% {
+        transform: translate(130px, 60px) scale(0);
+    }
+    60% {
+        transform: translate(140px, 80px)scale(3);
+    }
+    70% {
+        transform: translate(12px, 60px);
+    }
+    80% {
+        transform: translate(14px, 30px);
+    }
+    90% {
+        transform: translate(15px, 100px);
+    }
+    100% {
+        transform: translate(0px, 0px) rotate(360deg);
+    }
+}
+
+.container .content:nth-child(odd) {
+    border: 20px solid rgb(119, 7, 7);
+    background: transparent;
+}
+
+.container .content:nth-child(even) {
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid rgb(80, 9, 76);
+    background: transparent;
+}
+
+.container .content:nth-child(1) {
+    border: 10px solid rgb(33, 148, 18);
+    border-radius: 50%;
+    background: transparent;
+    top: 50%;
+    left: 10%;
+    animation: cont-anim 2s linear infinite;
+}
+
+.container .content:nth-child(2) {
+    border: 10px solid rgb(6, 6, 112);
+    background: transparent;
+    top: 50%;
+    left: 0%;
+    animation: cont-anim 15s linear infinite;
+}
+
+.container .content:nth-child(3) {
+    border: 10px solid rgb(177, 174, 13);
+    border-radius: 50%;
+    background: transparent;
+    top: 30%;
+    left: 1%;
+    animation: cont-anim 13s linear infinite;
+}
+
+.container .content:nth-child(4) {
+    border: 10px solid rgb(214, 109, 24);
+    background: transparent;
+    top: 10%;
+    left: 30%;
+    animation: cont-anim 4s linear infinite;
+}
+
+.container .content:nth-child(5) {
+    border: 10px solid rgb(131, 29, 151);
+    border-radius: 50%;
+    background: transparent;
+    top: 60%;
+    left: 60%;
+    animation: cont-anim 1s linear infinite;
+}
