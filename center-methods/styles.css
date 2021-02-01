@@ -99,3 +99,24 @@ nav {
     color: black;
     background: white;
 }
+
+.slider {
+    width: 70%;
+    /* height: 400px; */
+    position: absolute;
+    left: 0%;
+    top: 105px;
+    background-size: cover;
+    /* overflow: hidden; */
+}
+
+
+/* .slider figure { */
+
+position: relative;
+width: 100%;
+margin: 0;
+display: flex;
+animation: 20s slider infinite;
+
+}
