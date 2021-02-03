@@ -1,0 +1,365 @@
+                                                    * {
+                                                        margin: 0;
+                                                        padding: 0;
+                                                        box-sizing: border-box;
+                                                    }
+                                                    
+                                                    body {
+                                                        font-family: 'Segoe UI', Arial, sans-serif;
+                                                        background-color: #4CAF50;
+                                                    }
+                                                    
+                                                    header {
+                                                        /* background: burlywood; */
+                                                        padding: 13px 11px;
+                                                    }
+                                                    
+                                                    .left {
+                                                        float: left;
+                                                        font-family: Hanalei;
+                                                    }
+                                                    
+                                                    .right {
+                                                        float: right;
+                                                        display: flex;
+                                                    }
+                                                    
+                                                    header .right h2 {
+                                                        letter-spacing: 2px;
+                                                        font-family: 'Segoe UI', Arial, sans-serif;
+                                                        font-weight: 300;
+                                                        text-transform: uppercase;
+                                                        margin-top: 11px;
+                                                        margin-right: 25px;
+                                                    }
+                                                    
+                                                    .left h1 span {
+                                                        color: white;
+                                                    }
+                                                    
+                                                    header .right button {
+                                                        background: rgb(160, 226, 121);
+                                                        font-size: 20px;
+                                                        font-weight: 700;
+                                                        color: rgb(0, 0, 0);
+                                                        border-radius: 4px;
+                                                        outline: none;
+                                                        border: none;
+                                                        padding: 10px 14px;
+                                                        text-align: center;
+                                                        cursor: pointer;
+                                                        opacity: 0.8;
+                                                    }
+                                                    
+                                                    header .right button:hover {
+                                                        opacity: 1;
+                                                    }
+                                                    
+                                                    nav {
+                                                        border: 3px solid white;
+                                                        border-radius: 7px;
+                                                        position: sticky;
+                                                        top: 0;
+                                                        background-color: #4CAF50;
+                                                        width: 100%;
+                                                        margin-top: 40px;
+                                                        padding: 40px 50px;
+                                                        padding-top: 0;
+                                                        z-index: 1;
+                                                    }
+                                                    
+                                                    .nav-left {
+                                                        /* display: flex; */
+                                                        float: right;
+                                                        padding: 10px 14px;
+                                                        position: relative;
+                                                        left: 50px;
+                                                    }
+                                                    
+                                                    .nav-left a {
+                                                        text-decoration: none;
+                                                        color: rgb(255, 249, 249);
+                                                        margin-right: 5px;
+                                                        padding: 10px 14px;
+                                                    }
+                                                    
+                                                    .nav-left a:hover {
+                                                        opacity: 1;
+                                                        color: black;
+                                                        background: white;
+                                                        border-radius: 30px;
+                                                        /* box-shadow: 1px 3px 2px white; */
+                                                    }
+                                                    
+                                                    .nav-right {
+                                                        float: left;
+                                                        padding: 10px 14px;
+                                                        text-transform: uppercase;
+                                                        position: relative;
+                                                        right: 47px;
+                                                        font-size: 17px;
+                                                    }
+                                                    
+                                                    .nav-right a {
+                                                        text-decoration: none;
+                                                        color: white;
+                                                        margin-right: 20px;
+                                                        padding: 10px 14px;
+                                                        opacity: 0.8;
+                                                    }
+                                                    
+                                                    .nav-right a:hover {
+                                                        opacity: 1;
+                                                        color: black;
+                                                        background: white;
+                                                        border-radius: 15px;
+                                                    }
+                                                    
+                                                    section {
+                                                        overflow: hidden;
+                                                        width: 100%;
+                                                        height: 100%;
+                                                        background: transparent;
+                                                    }
+                                                    
+                                                    .slider {
+                                                        background: #4caf4f9c;
+                                                        width: 300%;
+                                                        height: 644px;
+                                                        position: relative;
+                                                        left: 0%;
+                                                        top: 1px;
+                                                        background-size: cover;
+                                                        display: flex;
+                                                        border-radius: 10px;
+                                                        animation: img-m 20s infinite ease-in-out;
+                                                    }
+                                                    
+                                                    .slider img {
+                                                        height: 97.5%;
+                                                        width: 100%;
+                                                        margin-top: 5px;
+                                                        margin-right: 5px;
+                                                        margin-left: 3px;
+                                                        margin-bottom: 5px;
+                                                        border-radius: 15px;
+                                                        float: left;
+                                                        box-shadow: -3px 12px 7px 9px #4caf4f56;
+                                                    }
+                                                    
+                                                    @keyframes img-m {
+                                                        0% {
+                                                            left: 0;
+                                                        }
+                                                        30% {
+                                                            left: -100%;
+                                                        }
+                                                        100% {
+                                                            left: -200%;
+                                                        }
+                                                    }
+                                                    
+                                                    .parallax {
+                                                        background-image: url("./image/3.JPG");
+                                                        min-height: 500px;
+                                                        background-attachment: fixed;
+                                                        background-position: center;
+                                                        background-repeat: no-repeat;
+                                                        background-size: cover;
+                                                        position: relative;
+                                                        box-shadow: 0px 0px 23px 11px rgba(74, 74, 82, 0.863);
+                                                        border-radius: 10px;
+                                                    }
+                                                    
+                                                    .parallax .par-text {
+                                                        position: absolute;
+                                                        background: transparent;
+                                                        font-size: 36px;
+                                                        font-family: Cinzel;
+                                                        width: 376px;
+                                                        height: 200px;
+                                                        top: 90px;
+                                                        right: 0px;
+                                                        color: rgb(241, 234, 221);
+                                                        text-shadow: 0px 1px 4px rgb(231, 219, 197);
+                                                        letter-spacing: 1px;
+                                                    }
+                                                    
+                                                    .parallax2 {
+                                                        background-image: url("./image/form.JPG");
+                                                        min-height: 550px;
+                                                        background-attachment: fixed;
+                                                        background-position: center;
+                                                        background-repeat: no-repeat;
+                                                        background-size: cover;
+                                                        position: relative;
+                                                        box-shadow: 0px 0px 23px 11px rgba(74, 74, 82, 0.863);
+                                                        border-radius: 10px;
+                                                        top: 10px;
+                                                    }
+                                                    
+                                                    .parallax2 .container {
+                                                        background: transparent;
+                                                        width: 100%;
+                                                        height: 100%;
+                                                        padding: 25px;
+                                                        border-radius: 20px;
+                                                        position: absolute;
+                                                        border-radius: 5px;
+                                                    }
+                                                    
+                                                    .parallax2 .container h2 {
+                                                        font-family: Cinzel;
+                                                        padding: 3px;
+                                                        margin: 0px;
+                                                        position: relative;
+                                                        top: -12px;
+                                                        text-align: center;
+                                                        color: antiquewhite;
+                                                    }
+                                                    
+                                                    .parallax2 .container form .form-row .form-col2 input[type=text],
+                                                    .parallax2 .container form .form-row .form-col2 select,
+                                                    .parallax2 .container form .form-row .form-col2 textarea {
+                                                        width: 100%;
+                                                        padding-top: 6px;
+                                                        padding-bottom: 6px;
+                                                        padding-left: 5px;
+                                                        padding-right: 5px;
+                                                        border-radius: 5px;
+                                                        font-family: Cinzel;
+                                                        cursor: pointer;
+                                                    }
+                                                    
+                                                    .parallax2 .container form .form-row .form-col2 input[type=text]:focus {
+                                                        outline: none;
+                                                    }
+                                                    
+                                                    .parallax2 .container form .form-row .form-col1 label {
+                                                        padding: 12px 12px 12px 0;
+                                                        display: inline-block;
+                                                    }
+                                                    
+                                                    .parallax2 .container form .form-row .form-col1 {
+                                                        width: 25%;
+                                                        font-family: cinzel;
+                                                        font-size: 20%;
+                                                        width: 25%;
+                                                        font-family: cinzel;
+                                                        font-size: 145%;
+                                                        color: antiquewhite;
+                                                        text-transform: uppercase;
+                                                        letter-spacing: 5px;
+                                                    }
+                                                    
+                                                    .parallax2 .container form .form-row .form-col2 {
+                                                        width: 75%;
+                                                    }
+                                                    
+                                                    .parallax2 .container form .form-row {
+                                                        display: flex;
+                                                    }
+                                                    
+                                                    .parallax2 .container form .button input[type=button] {
+                                                        background-color: #9fd461;
+                                                        color: white;
+                                                        padding: 12px 20px;
+                                                        border: none;
+                                                        border-radius: 4px;
+                                                        cursor: pointer;
+                                                        float: right;
+                                                        cursor: pointer;
+                                                        opacity: .8;
+                                                        font-family: crinzel;
+                                                        text-transform: uppercase;
+                                                    }
+                                                    
+                                                    .parallax2 .container form .button input[type=button]:hover {
+                                                        opacity: 1;
+                                                    }
+                                                    
+                                                    .gallary .g-row {
+                                                        display: flex;
+                                                        flex-wrap: wrap;
+                                                        /* padding: 0 4px; */
+                                                        overflow: hidden;
+                                                    }
+                                                    
+                                                    .gallary .g-column {
+                                                        flex: 25%;
+                                                        max-width: 50%;
+                                                        padding: 0 4px;
+                                                        margin: 0 auto;
+                                                    }
+                                                    /*                                                     
+                                                    .gallary .g-row img {
+                                                        width: 50%;
+                                                        height: 100%;
+                                                    } */
+                                                    
+                                                    .gallary .g-column img {
+                                                        margin-top: 8px;
+                                                        vertical-align: middle;
+                                                        width: 100%;
+                                                        border-radius: 6px;
+                                                    }
+                                                    
+                                                    .gallary {
+                                                        padding-top: 16px;
+                                                    }
+                                                    
+                                                    .gallary h1 {
+                                                        text-align: center;
+                                                        font-family: Marck Script;
+                                                        top: 10px;
+                                                        color: wheat;
+                                                        font-size: 60px;
+                                                    }
+                                                    
+                                                    footer {
+                                                        width: 100%;
+                                                        background: #4CAF50;
+                                                        padding: 29px 20px;
+                                                        display: flex;
+                                                        justify-content: center;
+                                                        align-items: center;
+                                                        flex-direction: column;
+                                                        border-radius: 10px;
+                                                    }
+                                                    
+                                                    footer a {
+                                                        color: white;
+                                                        text-decoration: none;
+                                                        font-family: Cinzel;
+                                                    }
+                                                    
+                                                    footer .flink {
+                                                        float: right;
+                                                        padding: 10px 14px;
+                                                    }
+                                                    
+                                                    footer .flink a {
+                                                        text-decoration: none;
+                                                        color: rgb(255, 249, 249);
+                                                        margin-right: 20px;
+                                                        padding: 10px 14px;
+                                                        width: 100px;
+                                                        height: 100px;
+                                                        cursor: pointer;
+                                                    }
+                                                    
+                                                    footer .flink a i {
+                                                        transform: scale(1);
+                                                        transition: .2s;
+                                                    }
+                                                    
+                                                    footer .flink a i:hover {
+                                                        transform: scale(1.5);
+                                                    }
+                                                    /* @media screen and (max-width: 600px) {
+                                                        .column {
+                                                            -ms-flex: 100%;
+                                                            flex: 100%;
+                                                            max-width: 100%;
+                                                        }
+                                                    } */
